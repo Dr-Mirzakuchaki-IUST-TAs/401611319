@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="project_vhdl.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="AD9255TB_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="AD9255TB_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="ad9255TB16_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ad9255TB24_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="ad9255TB24_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="ad9255TB24_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ad9255tb32_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="ad9255tb32_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="ad9255tb32_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="spi_3_wire_master.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="spi_3_wire_master.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="spi_3_wire_master.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="spi_3_wire_master.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="spi_3_wire_master.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="spi_3_wire_master.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="spi_3_wire_master.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="spi_3_wire_master.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="spi_3_wire_master.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="spi_3_wire_master.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="spi_3_wire_master.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="spi_3_wire_master.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="spi_3_wire_master.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="spi_3_wire_master.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="spi_3_wire_master.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="spi_3_wire_master.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="spi_3_wire_master.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="spi_3_wire_master.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="spi_3_wire_master.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="spi_3_wire_master_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="spi_3_wire_master_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="spi_3_wire_master_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="spi_3_wire_master_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="spi_3_wire_master_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="spi_3_wire_master_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="spi_3_wire_master_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="spi_3_wire_master_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="spi_3_wire_master_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="spi_3_wire_master_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="spi_3_wire_master_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="spi_3_wire_master_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="spi_3_wire_master_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="spi_3_wire_master_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="spi_3_wire_master_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1674578083" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1674578083">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1674653100" xil_pn:in_ck="-1690329021870157688" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1674653100">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="AD9255SPI.vhd"/>
+      <outfile xil_pn:name="AD9255TB.vhd"/>
+      <outfile xil_pn:name="ad9255TB16.vhd"/>
+      <outfile xil_pn:name="ad9255TB24.vhd"/>
+      <outfile xil_pn:name="ad9255tb32.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1674652894" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="1767571628281427819" xil_pn:start_ts="1674652894">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1674652894" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="960421473676345833" xil_pn:start_ts="1674652894">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1674578083" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-743015983025894636" xil_pn:start_ts="1674578083">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1674653100" xil_pn:in_ck="-1690329021870157688" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1674653100">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="AD9255SPI.vhd"/>
+      <outfile xil_pn:name="AD9255TB.vhd"/>
+      <outfile xil_pn:name="ad9255TB16.vhd"/>
+      <outfile xil_pn:name="ad9255TB24.vhd"/>
+      <outfile xil_pn:name="ad9255tb32.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1674653104" xil_pn:in_ck="-1690329021870157688" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-7472790338052135050" xil_pn:start_ts="1674653100">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="ad9255tb32_beh.prj"/>
+      <outfile xil_pn:name="ad9255tb32_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1674653104" xil_pn:in_ck="6502569446203115881" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="7660425512739947939" xil_pn:start_ts="1674653104">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="ad9255tb32_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+    </transform>
+    <transform xil_pn:end_ts="1674565032" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1674565032">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1674565032" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-3185543603502292719" xil_pn:start_ts="1674565032">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1674565032" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-743015983025894636" xil_pn:start_ts="1674565032">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1674565032" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1674565032">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1674565032" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="8092977823588585363" xil_pn:start_ts="1674565032">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1674565032" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-3972139311098429560" xil_pn:start_ts="1674565032">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1674565032" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-8148744742900295714" xil_pn:start_ts="1674565032">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1674652670" xil_pn:in_ck="1258914757845582358" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-6477719160895257235" xil_pn:start_ts="1674652662">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="spi_3_wire_master.lso"/>
+      <outfile xil_pn:name="spi_3_wire_master.ngc"/>
+      <outfile xil_pn:name="spi_3_wire_master.ngr"/>
+      <outfile xil_pn:name="spi_3_wire_master.prj"/>
+      <outfile xil_pn:name="spi_3_wire_master.stx"/>
+      <outfile xil_pn:name="spi_3_wire_master.syr"/>
+      <outfile xil_pn:name="spi_3_wire_master.xst"/>
+      <outfile xil_pn:name="spi_3_wire_master_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1674565055" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-413498230398250904" xil_pn:start_ts="1674565055">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1674652675" xil_pn:in_ck="4730168925743829125" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-2254919606915549409" xil_pn:start_ts="1674652670">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="spi_3_wire_master.bld"/>
+      <outfile xil_pn:name="spi_3_wire_master.ngd"/>
+      <outfile xil_pn:name="spi_3_wire_master_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1674652691" xil_pn:in_ck="4730168925743829126" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="4807565132092422995" xil_pn:start_ts="1674652675">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="spi_3_wire_master.pcf"/>
+      <outfile xil_pn:name="spi_3_wire_master_map.map"/>
+      <outfile xil_pn:name="spi_3_wire_master_map.mrp"/>
+      <outfile xil_pn:name="spi_3_wire_master_map.ncd"/>
+      <outfile xil_pn:name="spi_3_wire_master_map.ngm"/>
+      <outfile xil_pn:name="spi_3_wire_master_map.xrpt"/>
+      <outfile xil_pn:name="spi_3_wire_master_summary.xml"/>
+      <outfile xil_pn:name="spi_3_wire_master_usage.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1674652704" xil_pn:in_ck="7130006280856597151" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="3214117756270688487" xil_pn:start_ts="1674652691">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <outfile xil_pn:name="spi_3_wire_master.ncd"/>
+      <outfile xil_pn:name="spi_3_wire_master.pad"/>
+      <outfile xil_pn:name="spi_3_wire_master.par"/>
+      <outfile xil_pn:name="spi_3_wire_master.ptwx"/>
+      <outfile xil_pn:name="spi_3_wire_master.unroutes"/>
+      <outfile xil_pn:name="spi_3_wire_master.xpi"/>
+      <outfile xil_pn:name="spi_3_wire_master_pad.csv"/>
+      <outfile xil_pn:name="spi_3_wire_master_pad.txt"/>
+      <outfile xil_pn:name="spi_3_wire_master_par.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1674652704" xil_pn:in_ck="4730168925743828994" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1674652699">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+      <outfile xil_pn:name="spi_3_wire_master.twr"/>
+      <outfile xil_pn:name="spi_3_wire_master.twx"/>
+    </transform>
+  </transforms>
+
+</generated_project>

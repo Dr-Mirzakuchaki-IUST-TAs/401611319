@@ -1,0 +1,2 @@
+vhdl work "AD9255SPI.vhd"
+vhdl work "ad9255tb32.vhd"
