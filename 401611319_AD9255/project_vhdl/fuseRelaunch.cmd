@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/direct/project_vhdl/ad9255tb32_isim_beh.exe" -prj "C:/direct/project_vhdl/ad9255tb32_beh.prj" "work.ad9255tb32" 

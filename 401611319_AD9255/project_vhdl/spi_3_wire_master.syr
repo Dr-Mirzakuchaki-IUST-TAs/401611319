@@ -1,0 +1,559 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: spi_3_wire_master.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "spi_3_wire_master.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "spi_3_wire_master"
+Output Format                      : NGC
+Target Device                      : xc6slx45t-3-fgg484
+
+---- Source Options
+Top Module Name                    : spi_3_wire_master
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\direct\project_vhdl\AD9255SPI.vhd" into library work
+Parsing entity <spi_3_wire_master>.
+INFO:HDLCompiler:1676 - "C:\direct\project_vhdl\AD9255SPI.vhd" Line 25. declaration of a buffer port will make it difficult for you to validate this design by simulation. It is preferable to declare it as output
+INFO:HDLCompiler:1676 - "C:\direct\project_vhdl\AD9255SPI.vhd" Line 26. declaration of a buffer port will make it difficult for you to validate this design by simulation. It is preferable to declare it as output
+Parsing architecture <logic> of entity <spi_3_wire_master>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <spi_3_wire_master> (architecture <logic>) with generics from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <spi_3_wire_master>.
+    Related source file is "C:\direct\project_vhdl\AD9255SPI.vhd".
+        slaves = 1
+        cmd_width = 16
+        d_width = 32
+WARNING:Xst:647 - Input <rw> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <ss_n>.
+    Found 1-bit register for signal <busy>.
+    Found 32-bit register for signal <rx_data>.
+    Found 1-bit register for signal <sdio_clock_DFF_3_q>.
+    Found 1-bit register for signal <state>.
+    Found 1-bit register for signal <GND_5_o_clock_DFF_63>.
+    Found 32-bit register for signal <slave>.
+    Found 32-bit register for signal <clk_ratio>.
+    Found 32-bit register for signal <count>.
+    Found 1-bit register for signal <sclk>.
+    Found 1-bit register for signal <assert_data>.
+    Found 1-bit register for signal <rw_buffer>.
+    Found 16-bit register for signal <cmd_buffer>.
+    Found 32-bit register for signal <d_buffer>.
+    Found 7-bit register for signal <clk_toggles>.
+    Found 7-bit register for signal <last_bit_rx>.
+    Found 8-bit subtractor for signal <GND_5_o_GND_5_o_sub_22_OUT> created at line 110.
+    Found 8-bit adder for signal <n0183> created at line 84.
+    Found 7-bit adder for signal <clk_toggles[6]_GND_5_o_add_16_OUT> created at line 98.
+    Found 8-bit adder for signal <n0179> created at line 119.
+    Found 32-bit adder for signal <count[31]_GND_5_o_add_35_OUT> created at line 139.
+    Found 7-bit subtractor for signal <GND_5_o_GND_5_o_sub_7_OUT<6:0>> created at line 84.
+    Found 1-bit tristate buffer for signal <sdio> created at line 45
+    Found 32-bit comparator lessequal for signal <GND_5_o_addr[31]_LessThan_1_o> created at line 66
+    Found 32-bit comparator equal for signal <clk_ratio[31]_count[31]_equal_16_o> created at line 95
+    Found 7-bit comparator greater for signal <clk_toggles[6]_PWR_5_o_LessThan_18_o> created at line 101
+    Found 8-bit comparator greater for signal <GND_5_o_GND_5_o_LessThan_20_o> created at line 106
+    Found 8-bit comparator greater for signal <GND_5_o_GND_5_o_LessThan_23_o> created at line 110
+    Found 8-bit comparator greater for signal <GND_5_o_BUS_0003_LessThan_28_o> created at line 119
+    Summary:
+	inferred   6 Adder/Subtractor(s).
+	inferred 198 D-type flip-flop(s).
+	inferred   6 Comparator(s).
+	inferred  14 Multiplexer(s).
+	inferred   1 Tristate(s).
+Unit <spi_3_wire_master> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 6
+ 32-bit adder                                          : 1
+ 7-bit adder                                           : 1
+ 7-bit subtractor                                      : 1
+ 8-bit adder                                           : 2
+ 8-bit subtractor                                      : 1
+# Registers                                            : 16
+ 1-bit register                                        : 8
+ 16-bit register                                       : 1
+ 32-bit register                                       : 5
+ 7-bit register                                        : 2
+# Comparators                                          : 6
+ 32-bit comparator equal                               : 1
+ 32-bit comparator lessequal                           : 1
+ 7-bit comparator greater                              : 1
+ 8-bit comparator greater                              : 3
+# Multiplexers                                         : 14
+ 1-bit 2-to-1 multiplexer                              : 8
+ 16-bit 2-to-1 multiplexer                             : 1
+ 32-bit 2-to-1 multiplexer                             : 5
+# Tristates                                            : 1
+ 1-bit tristate buffer                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:2677 - Node <slave_1> of sequential type is unconnected in block <spi_3_wire_master>.
+WARNING:Xst:2677 - Node <slave_2> of sequential type is unconnected in block <spi_3_wire_master>.
+WARNING:Xst:2677 - Node <slave_3> of sequential type is unconnected in block <spi_3_wire_master>.
+WARNING:Xst:2677 - Node <slave_4> of sequential type is unconnected in block <spi_3_wire_master>.
+WARNING:Xst:2677 - Node <slave_5> of sequential type is unconnected in block <spi_3_wire_master>.
+WARNING:Xst:2677 - Node <slave_6> of sequential type is unconnected in block <spi_3_wire_master>.
+WARNING:Xst:2677 - Node <slave_7> of sequential type is unconnected in block <spi_3_wire_master>.
+WARNING:Xst:2677 - Node <slave_8> of sequential type is unconnected in block <spi_3_wire_master>.
+WARNING:Xst:2677 - Node <slave_9> of sequential type is unconnected in block <spi_3_wire_master>.
+WARNING:Xst:2677 - Node <slave_10> of sequential type is unconnected in block <spi_3_wire_master>.
+WARNING:Xst:2677 - Node <slave_11> of sequential type is unconnected in block <spi_3_wire_master>.
+WARNING:Xst:2677 - Node <slave_12> of sequential type is unconnected in block <spi_3_wire_master>.
+WARNING:Xst:2677 - Node <slave_13> of sequential type is unconnected in block <spi_3_wire_master>.
+WARNING:Xst:2677 - Node <slave_14> of sequential type is unconnected in block <spi_3_wire_master>.
+WARNING:Xst:2677 - Node <slave_15> of sequential type is unconnected in block <spi_3_wire_master>.
+WARNING:Xst:2677 - Node <slave_16> of sequential type is unconnected in block <spi_3_wire_master>.
+WARNING:Xst:2677 - Node <slave_17> of sequential type is unconnected in block <spi_3_wire_master>.
+WARNING:Xst:2677 - Node <slave_18> of sequential type is unconnected in block <spi_3_wire_master>.
+WARNING:Xst:2677 - Node <slave_19> of sequential type is unconnected in block <spi_3_wire_master>.
+WARNING:Xst:2677 - Node <slave_20> of sequential type is unconnected in block <spi_3_wire_master>.
+WARNING:Xst:2677 - Node <slave_21> of sequential type is unconnected in block <spi_3_wire_master>.
+WARNING:Xst:2677 - Node <slave_22> of sequential type is unconnected in block <spi_3_wire_master>.
+WARNING:Xst:2677 - Node <slave_23> of sequential type is unconnected in block <spi_3_wire_master>.
+WARNING:Xst:2677 - Node <slave_24> of sequential type is unconnected in block <spi_3_wire_master>.
+WARNING:Xst:2677 - Node <slave_25> of sequential type is unconnected in block <spi_3_wire_master>.
+WARNING:Xst:2677 - Node <slave_26> of sequential type is unconnected in block <spi_3_wire_master>.
+WARNING:Xst:2677 - Node <slave_27> of sequential type is unconnected in block <spi_3_wire_master>.
+WARNING:Xst:2677 - Node <slave_28> of sequential type is unconnected in block <spi_3_wire_master>.
+WARNING:Xst:2677 - Node <slave_29> of sequential type is unconnected in block <spi_3_wire_master>.
+WARNING:Xst:2677 - Node <slave_30> of sequential type is unconnected in block <spi_3_wire_master>.
+WARNING:Xst:2677 - Node <slave_31> of sequential type is unconnected in block <spi_3_wire_master>.
+
+Synthesizing (advanced) Unit <spi_3_wire_master>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+The following registers are absorbed into counter <clk_toggles>: 1 register on signal <clk_toggles>.
+Unit <spi_3_wire_master> synthesized (advanced).
+WARNING:Xst:2677 - Node <slave_1> of sequential type is unconnected in block <spi_3_wire_master>.
+WARNING:Xst:2677 - Node <slave_2> of sequential type is unconnected in block <spi_3_wire_master>.
+WARNING:Xst:2677 - Node <slave_3> of sequential type is unconnected in block <spi_3_wire_master>.
+WARNING:Xst:2677 - Node <slave_4> of sequential type is unconnected in block <spi_3_wire_master>.
+WARNING:Xst:2677 - Node <slave_5> of sequential type is unconnected in block <spi_3_wire_master>.
+WARNING:Xst:2677 - Node <slave_6> of sequential type is unconnected in block <spi_3_wire_master>.
+WARNING:Xst:2677 - Node <slave_7> of sequential type is unconnected in block <spi_3_wire_master>.
+WARNING:Xst:2677 - Node <slave_8> of sequential type is unconnected in block <spi_3_wire_master>.
+WARNING:Xst:2677 - Node <slave_9> of sequential type is unconnected in block <spi_3_wire_master>.
+WARNING:Xst:2677 - Node <slave_10> of sequential type is unconnected in block <spi_3_wire_master>.
+WARNING:Xst:2677 - Node <slave_11> of sequential type is unconnected in block <spi_3_wire_master>.
+WARNING:Xst:2677 - Node <slave_12> of sequential type is unconnected in block <spi_3_wire_master>.
+WARNING:Xst:2677 - Node <slave_13> of sequential type is unconnected in block <spi_3_wire_master>.
+WARNING:Xst:2677 - Node <slave_14> of sequential type is unconnected in block <spi_3_wire_master>.
+WARNING:Xst:2677 - Node <slave_15> of sequential type is unconnected in block <spi_3_wire_master>.
+WARNING:Xst:2677 - Node <slave_16> of sequential type is unconnected in block <spi_3_wire_master>.
+WARNING:Xst:2677 - Node <slave_17> of sequential type is unconnected in block <spi_3_wire_master>.
+WARNING:Xst:2677 - Node <slave_18> of sequential type is unconnected in block <spi_3_wire_master>.
+WARNING:Xst:2677 - Node <slave_19> of sequential type is unconnected in block <spi_3_wire_master>.
+WARNING:Xst:2677 - Node <slave_20> of sequential type is unconnected in block <spi_3_wire_master>.
+WARNING:Xst:2677 - Node <slave_21> of sequential type is unconnected in block <spi_3_wire_master>.
+WARNING:Xst:2677 - Node <slave_22> of sequential type is unconnected in block <spi_3_wire_master>.
+WARNING:Xst:2677 - Node <slave_23> of sequential type is unconnected in block <spi_3_wire_master>.
+WARNING:Xst:2677 - Node <slave_24> of sequential type is unconnected in block <spi_3_wire_master>.
+WARNING:Xst:2677 - Node <slave_25> of sequential type is unconnected in block <spi_3_wire_master>.
+WARNING:Xst:2677 - Node <slave_26> of sequential type is unconnected in block <spi_3_wire_master>.
+WARNING:Xst:2677 - Node <slave_27> of sequential type is unconnected in block <spi_3_wire_master>.
+WARNING:Xst:2677 - Node <slave_28> of sequential type is unconnected in block <spi_3_wire_master>.
+WARNING:Xst:2677 - Node <slave_29> of sequential type is unconnected in block <spi_3_wire_master>.
+WARNING:Xst:2677 - Node <slave_30> of sequential type is unconnected in block <spi_3_wire_master>.
+WARNING:Xst:2677 - Node <slave_31> of sequential type is unconnected in block <spi_3_wire_master>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 4
+ 7-bit adder                                           : 1
+ 7-bit subtractor                                      : 1
+ 8-bit adder                                           : 1
+ 8-bit subtractor                                      : 1
+# Counters                                             : 2
+ 32-bit up counter                                     : 1
+ 7-bit up counter                                      : 1
+# Registers                                            : 128
+ Flip-Flops                                            : 128
+# Comparators                                          : 6
+ 32-bit comparator equal                               : 1
+ 32-bit comparator lessequal                           : 1
+ 7-bit comparator greater                              : 1
+ 8-bit comparator greater                              : 3
+# Multiplexers                                         : 13
+ 1-bit 2-to-1 multiplexer                              : 8
+ 16-bit 2-to-1 multiplexer                             : 1
+ 32-bit 2-to-1 multiplexer                             : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch last_bit_rx_6 hinder the constant cleaning in the block spi_3_wire_master.
+   You should achieve better results by setting this init to 1.
+INFO:Xst:2261 - The FF/Latch <last_bit_rx_0> in Unit <spi_3_wire_master> is equivalent to the following 4 FFs/Latches, which will be removed : <last_bit_rx_1> <last_bit_rx_2> <last_bit_rx_3> <last_bit_rx_4> 
+
+Optimizing unit <spi_3_wire_master> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block spi_3_wire_master, actual ratio is 0.
+FlipFlop rw_buffer has been replicated 1 time(s)
+INFO:Xst:1843 - HDL ADVISOR - FlipFlop rw_buffer connected to a primary input has been replicated
+FlipFlop state has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 165
+ Flip-Flops                                            : 165
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : spi_3_wire_master.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 305
+#      GND                         : 1
+#      INV                         : 3
+#      LUT2                        : 5
+#      LUT3                        : 54
+#      LUT4                        : 11
+#      LUT5                        : 82
+#      LUT6                        : 65
+#      MUXCY                       : 50
+#      MUXF7                       : 1
+#      VCC                         : 1
+#      XORCY                       : 32
+# FlipFlops/Latches                : 165
+#      FD                          : 67
+#      FDC                         : 4
+#      FDCE                        : 32
+#      FDE                         : 53
+#      FDP                         : 2
+#      FDRE                        : 7
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 152
+#      IBUF                        : 116
+#      IOBUF                       : 1
+#      OBUF                        : 35
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45tfgg484-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             165  out of  54576     0%  
+ Number of Slice LUTs:                  220  out of  27288     0%  
+    Number used as Logic:               220  out of  27288     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    253
+   Number with an unused Flip Flop:      88  out of    253    34%  
+   Number with an unused LUT:            33  out of    253    13%  
+   Number of fully used LUT-FF pairs:   132  out of    253    52%  
+   Number of unique control sets:         6
+
+IO Utilization: 
+ Number of IOs:                         154
+ Number of bonded IOBs:                 153  out of    296    51%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clock                              | BUFGP                  | 165   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 5.479ns (Maximum Frequency: 182.519MHz)
+   Minimum input arrival time before clock: 6.806ns
+   Maximum output required time after clock: 4.419ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock'
+  Clock period: 5.479ns (frequency: 182.519MHz)
+  Total number of paths / destination ports: 11304 / 227
+-------------------------------------------------------------------------
+Delay:               5.479ns (Levels of Logic = 6)
+  Source:            last_bit_rx_0 (FF)
+  Destination:       d_buffer_1 (FF)
+  Source Clock:      clock rising
+  Destination Clock: clock rising
+
+  Data Path: last_bit_rx_0 to d_buffer_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              5   0.447   0.943  last_bit_rx_0 (last_bit_rx_0)
+     LUT3:I0->O            1   0.205   0.808  GND_5_o_GND_5_o_LessThan_23_o2_SW2 (N25)
+     LUT6:I3->O            1   0.205   0.684  _n0282_inv41_SW1 (N19)
+     LUT4:I2->O            1   0.203   0.000  _n0282_inv1_lut (_n0282_inv1_lut)
+     MUXCY:S->O            1   0.172   0.000  _n0282_inv1_cy (clk_ratio[31]_count[31]_equal_16_o_l1)
+     MUXCY:CI->O          32   0.213   1.292  _n0282_inv1_cy1 (_n0282_inv)
+     LUT3:I2->O            1   0.205   0.000  d_buffer_0_rstpot (d_buffer_0_rstpot)
+     FD:D                      0.102          d_buffer_0
+    ----------------------------------------
+    Total                      5.479ns (1.752ns logic, 3.727ns route)
+                                       (32.0% logic, 68.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clock'
+  Total number of paths / destination ports: 2037 / 228
+-------------------------------------------------------------------------
+Offset:              6.806ns (Levels of Logic = 36)
+  Source:            clk_div<14> (PAD)
+  Destination:       count_30 (FF)
+  Destination Clock: clock rising
+
+  Data Path: clk_div<14> to count_30
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.222   1.015  clk_div_14_IBUF (clk_div_14_IBUF)
+     LUT6:I0->O            1   0.203   0.944  Mmux_clk_div[31]_GND_5_o_mux_3_OUT11 (Mmux_clk_div[31]_GND_5_o_mux_3_OUT1)
+     LUT6:I0->O            2   0.203   0.864  Mmux_clk_div[31]_GND_5_o_mux_3_OUT16 (Mmux_clk_div[31]_GND_5_o_mux_3_OUT15)
+     LUT4:I0->O            1   0.203   0.000  Mcount_count_lut<0> (Mcount_count_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Mcount_count_cy<0> (Mcount_count_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_count_cy<1> (Mcount_count_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_count_cy<2> (Mcount_count_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_count_cy<3> (Mcount_count_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_count_cy<4> (Mcount_count_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_count_cy<5> (Mcount_count_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_count_cy<6> (Mcount_count_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_count_cy<7> (Mcount_count_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_count_cy<8> (Mcount_count_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_count_cy<9> (Mcount_count_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_count_cy<10> (Mcount_count_cy<10>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_count_cy<11> (Mcount_count_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_count_cy<12> (Mcount_count_cy<12>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_count_cy<13> (Mcount_count_cy<13>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_count_cy<14> (Mcount_count_cy<14>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_count_cy<15> (Mcount_count_cy<15>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_count_cy<16> (Mcount_count_cy<16>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_count_cy<17> (Mcount_count_cy<17>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_count_cy<18> (Mcount_count_cy<18>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_count_cy<19> (Mcount_count_cy<19>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_count_cy<20> (Mcount_count_cy<20>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_count_cy<21> (Mcount_count_cy<21>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_count_cy<22> (Mcount_count_cy<22>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_count_cy<23> (Mcount_count_cy<23>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_count_cy<24> (Mcount_count_cy<24>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_count_cy<25> (Mcount_count_cy<25>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_count_cy<26> (Mcount_count_cy<26>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_count_cy<27> (Mcount_count_cy<27>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_count_cy<28> (Mcount_count_cy<28>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_count_cy<29> (Mcount_count_cy<29>)
+     XORCY:CI->O           1   0.180   0.944  Mcount_count_xor<30> (Mcount_count30)
+     LUT6:I0->O            1   0.203   0.000  count_30_rstpot (count_30_rstpot)
+     FD:D                      0.102          count_30
+    ----------------------------------------
+    Total                      6.806ns (3.039ns logic, 3.767ns route)
+                                       (44.7% logic, 55.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock'
+  Total number of paths / destination ports: 37 / 36
+-------------------------------------------------------------------------
+Offset:              4.419ns (Levels of Logic = 2)
+  Source:            GND_5_o_clock_DFF_63 (FF)
+  Destination:       sdio (PAD)
+  Source Clock:      clock rising
+
+  Data Path: GND_5_o_clock_DFF_63 to sdio
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.447   0.616  GND_5_o_clock_DFF_63 (GND_5_o_clock_DFF_63)
+     INV:I->O              1   0.206   0.579  GND_5_o_clock_DFF_63_inv1_INV_0 (GND_5_o_clock_DFF_63_inv)
+     IOBUF:T->IO               2.571          sdio_IOBUF (sdio)
+    ----------------------------------------
+    Total                      4.419ns (3.224ns logic, 1.195ns route)
+                                       (73.0% logic, 27.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clock
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clock          |    5.479|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.62 secs
+ 
+--> 
+
+Total memory usage is 4502692 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   64 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

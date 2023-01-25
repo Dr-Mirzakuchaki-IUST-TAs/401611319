@@ -1,0 +1,28 @@
+Command line:
+   ad9255TB24_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  4117
+
+Wed Jan 25 16:41:37 2023
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 5150.35 Meg
+
+ Total Signals          : 40
+ Total Nets             : 124
+ Total Signal Drivers   : 22
+ Total Blocks           : 6
+ Total Primitive Blocks : 5
+ Total Processes        : 3
+ Total Traceable Variables  : 20
+ Total Scalar Nets and Variables : 630
+
+ Total Simulation Time: 0.0625 sec
+
+ Current Memory Usage: 4678.49 Meg
+
+Wed Jan 25 16:46:24 2023
+
